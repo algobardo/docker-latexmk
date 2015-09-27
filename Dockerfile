@@ -1,7 +1,7 @@
 FROM fedora:22
 MAINTAINER heichblatt
 
-RUN dnf install -y texlive texlive-amsfonts texlive-babel-german texlive-latex texlive-base texlive-metafont-bin texlive-texconfig texlive-preprint texlive-dinbrief latexmk && \
+RUN dnf install -y texlive texlive-amsfonts texlive-babel-german texlive-latex texlive-base texlive-metafont-bin texlive-texconfig texlive-preprint texlive-dinbrief texlive-wrapfig latexmk && \
     dnf clean all
 RUN mkdir -pv /target
 WORKDIR /target
