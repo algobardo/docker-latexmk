@@ -5,5 +5,3 @@ RUN dnf install -y texlive texlive-amsfonts texlive-babel-german texlive-latex t
     dnf clean all
 RUN mkdir -pv /target
 WORKDIR /target
-ADD ./entrypoint.sh /usr/bin/entrypoint.sh
-ENTRYPOINT ["/usr/bin/entrypoint.sh"]
