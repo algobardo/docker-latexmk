@@ -1,5 +1,5 @@
 FROM ubuntu
 MAINTAINER algobardo
 
-RUN apt-get update && apt-get install -y texlive-full latexmk 
+RUN apt-get update && apt-get install -y texlive-full latexmk xzdec
 RUN tlmgr init-usertree && tlmgr update --all && tlmgr install clrscode3e
